@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".Global.Fragment.MainFragment">
+
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/border_radius"
+        android:orientation="vertical"
+        android:paddingBottom="2dp">
+
+<!--        f2f3f4-->
+        <SearchView
+            android:id="@+id/serch_main"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#f2f3f4"
+            android:visibility="visible">
+
+        </SearchView>
+
+        <LinearLayout
+            android:id="@+id/lyLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/locationSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/removeLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:src="@drawable/close" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/position_city"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorWhite"
+            android:src="@drawable/ic_location_black"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal"
+        android:layout_below="@+id/ll_search">`
+
+        <LinearLayout
+            android:id="@+id/LL_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:visibility="gone"
+                android:layout_width="10dp"
+                android:layout_height="10dp"/>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/radio_home_background"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:id="@+id/frm_home"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp">
+
+                    <RadioButton
+                        android:id="@+id/radio_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@android:color/transparent" />
+
+                    <ImageView
+                        android:id="@+id/imv_home"
+                        android:layout_width="71dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="6sp"
+                        android:src="@mipmap/ic_house1" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/radio_car_background"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:id="@+id/frm_car"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp">
+
+                    <RadioButton
+                        android:id="@+id/radio_car"
+                        android:layout_width="84dp"
+                        android:layout_height="match_parent"
+
+                        android:button="@android:color/transparent"
+                        android:checked="true" />
+
+                    <ImageView
+                        android:id="@+id/imv_car"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="3sp"
+                        android:src="@mipmap/ic_car" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/radio_caravan_background"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:id="@+id/frm_caravan"
+                    android:layout_width="@dimen/oval_size_one"
+                    android:layout_height="@dimen/oval_size_one">
+
+                    <RadioButton
+                        android:id="@+id/radio_caravan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@android:color/transparent"
+                        android:checked="true" />
+
+                    <ImageView
+                        android:id="@+id/imv_caravan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="6sp"
+                        android:src="@mipmap/ic_caravan" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/radio_kamp_background"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:id="@+id/frm_kamp"
+                    android:layout_width="@dimen/oval_size_one"
+                    android:layout_height="@dimen/oval_size_one">>
+
+                    <RadioButton
+                        android:id="@+id/radio_kamp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@android:color/transparent" />
+
+                    <ImageView
+                        android:id="@+id/imv_kamp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="6sp"
+                        android:src="@mipmap/ic_kamp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/radio_dress_background"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:id="@+id/frm_dress"
+                    android:layout_width="@dimen/oval_size_one"
+                    android:layout_height="@dimen/oval_size_one">>
+
+                    <RadioButton
+                        android:id="@+id/radio_dress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@android:color/transparent" />
+
+                    <ImageView
+                        android:id="@+id/imv_dress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="6sp"
+                        android:src="@mipmap/ic_dress_red" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/radio_bike_background"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:id="@+id/frm_bike"
+                    android:layout_width="@dimen/oval_size_one"
+                    android:layout_height="@dimen/oval_size_one">
+
+                    <RadioButton
+                        android:id="@+id/radio_bike"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@android:color/transparent" />
+
+                    <ImageView
+                        android:id="@+id/imv_bike"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="3sp"
+                        android:src="@mipmap/ic_bike" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/radio_camera_background"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:id="@+id/frm_camera"
+                    android:layout_width="@dimen/oval_size_one"
+                    android:layout_height="@dimen/oval_size_one">>
+
+                    <RadioButton
+                        android:id="@+id/radio_camera"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@android:color/transparent" />
+
+                    <ImageView
+                        android:id="@+id/imv_camera"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="6sp"
+                        android:src="@mipmap/ic_camera_blue" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/radio_vehicle_background"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:id="@+id/frm_vehicle"
+                    android:layout_width="@dimen/oval_size_one"
+                    android:layout_height="@dimen/oval_size_one">
+
+                    <RadioButton
+                        android:id="@+id/radio_vehicle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@android:color/transparent"
+                        android:checked="true" />
+
+                    <ImageView
+                        android:id="@+id/imv_vehicle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="6sp"
+                        android:src="@mipmap/ic_sea_vehicle" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/radio_music_background"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:id="@+id/frm_music"
+                    android:layout_width="@dimen/oval_size_one"
+                    android:layout_height="@dimen/oval_size_one">>
+
+                    <RadioButton
+                        android:id="@+id/radio_music"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@android:color/transparent" />
+
+                    <ImageView
+                        android:id="@+id/imv_music"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="6sp"
+                        android:src="@mipmap/ic_music" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/radio_more_background"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:id="@+id/frm_more"
+                    android:layout_width="@dimen/oval_size_one"
+                    android:layout_height="@dimen/oval_size_one">
+
+                    <RadioButton
+                        android:id="@+id/radio_more"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@android:color/transparent" />
+
+                    <ImageView
+                        android:id="@+id/imv_more"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="6sp"
+                        android:src="@mipmap/ic_other_grey" />
+
+                </FrameLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/lyt_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/viewBlackTransparent_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blackTransparent"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/city_search_part"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+        ////////////////
+
+        <include
+            android:id="@+id/toolbar_id"
+            layout="@layout/tool_bars"></include>
+
+
+        <ImageView
+            android:id="@+id/image_map1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/city_search_part"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/mapsandlocation"
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_search_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_map1"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+
+            <SearchView
+                android:id="@+id/serch_main_city"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_more_curve" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_map2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/ll_search_city"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/pinpoints"
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:id="@+id/lyt_container_city"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/viewBlackTransparent_search_city"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/blackTransparent"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

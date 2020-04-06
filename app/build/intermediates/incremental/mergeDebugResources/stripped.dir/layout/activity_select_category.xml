@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#e8e8e8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/rounded_category_home"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/radio_home_active"
+            android:src="@mipmap/ic_house1"
+            android:padding="15dp"
+            android:scaleType="fitCenter"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/rounded_category_car"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/radio_car_active"
+            android:src="@mipmap/ic_car"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:layout_marginStart="30dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/rounded_category_caravan"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/radio_caravan_active"
+            android:src="@mipmap/ic_caravan"
+            android:padding="15dp"
+            android:scaleType="fitCenter"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/rounded_category_vehicle"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/radio_vehicle_active"
+            android:src="@mipmap/ic_sea_vehicle"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:layout_marginStart="30dp"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/rounded_category_dress"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/radio_dress_active"
+            android:src="@mipmap/ic_dress_red"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:layout_marginStart="30dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/rounded_category_bike"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/radio_bike_active"
+            android:src="@mipmap/ic_bike"
+            android:padding="15dp"
+            android:scaleType="fitCenter"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/rounded_category_camera"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/radio_camera_active"
+            android:src="@mipmap/ic_camera_blue"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:layout_marginStart="30dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/rounded_category_kamp"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/radio_kamp_active"
+            android:src="@mipmap/ic_kamp"
+            android:padding="10dp"
+            android:scaleType="fitCenter"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/rounded_category_music"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/radio_music_active"
+            android:src="@mipmap/ic_music"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:layout_marginStart="30dp"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/rounded_category_more"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/radio_more_active"
+            android:src="@mipmap/ic_other_white"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:layout_marginStart="30dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

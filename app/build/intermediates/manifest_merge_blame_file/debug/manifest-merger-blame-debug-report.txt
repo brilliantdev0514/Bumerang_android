@@ -1,0 +1,875 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tur.bumerang"
+4    android:versionCode="5"
+5    android:versionName="2.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="com.android.vending.BILLING" />
+11-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:5:5-67
+11-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:6:5-79
+12-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:7:5-67
+13-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:7:22-64
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:8:5-79
+14-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:8:22-76
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:9:5-81
+15-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:9:22-78
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:10:5-80
+16-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:10:22-77
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:11:5-65
+17-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:11:22-62
+18
+19    <uses-feature android:name="android.hardware.camera" />
+19-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:13:5-60
+19-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:13:19-57
+20    <uses-feature android:name="android.hardware.camera.autofocus" />
+20-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:14:5-70
+20-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:14:19-67
+21
+22    <uses-permission android:name="android.permission.STORAGE" />
+22-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:16:5-66
+22-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:16:22-63
+23    <uses-permission android:name="android.permission.CALL_PHONE" />
+23-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:17:5-69
+23-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:17:22-66
+24    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+24-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:18:5-81
+24-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:18:22-78
+25    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+25-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:19:5-97
+25-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:19:22-95
+26
+27    <uses-feature android:name="android.hardware.location.gps" />
+27-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:20:5-66
+27-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:20:19-63
+28
+29    <uses-permission android:name="android.permission.WAKE_LOCK" />
+29-->[com.github.nguyenhoanglam:ImagePicker:1.3.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\242255f6c41cfec38f134edd20d1a80b\ImagePicker-1.3.3\AndroidManifest.xml:13:5-68
+29-->[com.github.nguyenhoanglam:ImagePicker:1.3.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\242255f6c41cfec38f134edd20d1a80b\ImagePicker-1.3.3\AndroidManifest.xml:13:22-65
+30
+31    <uses-feature
+31-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\82653396968af777fdb1f59f7c3ba8c3\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+32        android:glEsVersion="0x00020000"
+32-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\82653396968af777fdb1f59f7c3ba8c3\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+33        android:required="true" /> <!-- Required by older versions of Google Play services to create GCM registration tokens -->
+33-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\82653396968af777fdb1f59f7c3ba8c3\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+34    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+34-->[com.google.android.gms:play-services-gcm:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\4eecd3f7e89c4a767041281541e72ed9\play-services-gcm-17.0.0\AndroidManifest.xml:23:5-82
+34-->[com.google.android.gms:play-services-gcm:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\4eecd3f7e89c4a767041281541e72ed9\play-services-gcm-17.0.0\AndroidManifest.xml:23:22-79
+35    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+35-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:26:5-110
+35-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:26:22-107
+36
+37    <application
+37-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:22:5-237:19
+38        android:name="com.tur.bumerang.MyApp"
+38-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:23:9-30
+39        android:allowBackup="true"
+39-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:24:9-35
+40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+40-->[androidx.core:core:1.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\331630a23dfa1f0594bcf54d5352aa36\core-1.1.0\AndroidManifest.xml:24:18-86
+41        android:debuggable="true"
+42        android:icon="@mipmap/ic_launcher"
+42-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:25:9-43
+43        android:label="@string/app_name"
+43-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:26:9-41
+44        android:roundIcon="@mipmap/ic_launcher_round"
+44-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:27:9-54
+45        android:supportsRtl="true"
+45-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:28:9-35
+46        android:testOnly="false"
+46-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:30:9-33
+47        android:theme="@style/IntroTheme"
+47-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:29:9-42
+48        android:usesCleartextTraffic="true" >
+48-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:31:9-44
+49
+50        <!--
+51             The API key for Google Maps-based APIs is defined as a string resource.
+52             (See the file "res/values/google_maps_api.xml").
+53             Note that the API key is linked to the encryption key used to sign the APK.
+54             You need a different API key for each encryption key, including the release key that is used to
+55             sign the APK for publishing.
+56             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+57        -->
+58        <meta-data
+58-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:41:9-43:55
+59            android:name="com.google.android.geo.API_KEY"
+59-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:42:13-58
+60            android:value="@string/google_maps_key" />
+60-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:43:13-52
+61        <meta-data
+61-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:44:9-46:36
+62            android:name="com.google.android.gms.wallet.api.enabled"
+62-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:45:13-69
+63            android:value="true" />
+63-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:46:13-33
+64
+65        <activity
+65-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:48:9-53:20
+66            android:name="com.tur.bumerang.Base.MapsActivity"
+66-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:49:13-46
+67            android:label="@string/title_activity_maps" >
+67-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:49:47-90
+68            <meta-data
+68-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:50:13-52:72
+69                android:name="com.google.android.gms.version"
+69-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:51:17-62
+70                android:value="@integer/google_play_services_version" />
+70-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:52:17-70
+71        </activity>
+72        <activity android:name="com.tur.bumerang.UserProfileMoreProductGrid.UserProfileMoreReviewProductAll" />
+72-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:54:9-96
+72-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:54:19-93
+73        <activity android:name="com.tur.bumerang.UserProfileMoreProductGrid.UserProfileMoreProductAll" />
+73-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:55:9-90
+73-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:55:19-87
+74        <activity android:name="com.tur.bumerang.Global.Activity.ViewImageActivity" />
+74-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:56:9-71
+74-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:56:19-68
+75        <activity android:name="com.tur.bumerang.Base.BaseActivity" />
+75-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:57:9-55
+75-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:57:19-52
+76        <activity
+76-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:58:9-59:57
+77            android:name="com.tur.bumerang.Global.Activity.Position_Search_City"
+77-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:58:19-71
+78            android:windowSoftInputMode="adjustResize" /> <!-- facebook login -->
+78-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:59:13-55
+79        <meta-data
+79-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:60:9-62:55
+80            android:name="com.facebook.sdk.ApplicationId"
+80-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:61:13-58
+81            android:value="@string/facebook_app_id" />
+81-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:62:13-52
+82
+83        <activity
+83-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:64:9-67:48
+84            android:name="com.facebook.FacebookActivity"
+84-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:65:13-57
+85            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+85-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:66:13-96
+86            android:label="@string/app_name"
+86-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:67:13-45
+87            android:theme="@style/com_facebook_activity_theme" />
+87-->[com.facebook.android:facebook-common:5.13.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\f17075107ec3228f38bacbd0c3c76cdc\jetified-facebook-common-5.13.0\AndroidManifest.xml:32:13-63
+88        <activity
+88-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:68:9-79:20
+89            android:name="com.facebook.CustomTabActivity"
+89-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:69:13-58
+90            android:exported="true" >
+90-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:70:13-36
+91            <intent-filter>
+91-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:71:13-78:29
+92                <action android:name="android.intent.action.VIEW" />
+92-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:72:17-69
+92-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:72:25-66
+93
+94                <category android:name="android.intent.category.DEFAULT" />
+94-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:74:17-76
+94-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:74:27-73
+95                <category android:name="android.intent.category.BROWSABLE" />
+95-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:75:17-78
+95-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:75:27-75
+96
+97                <data android:scheme="@string/fb_login_protocol_scheme" />
+97-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:77:17-75
+97-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:77:23-72
+98            </intent-filter>
+99        </activity>
+100        <activity android:name="com.github.pdfviewer.PDFViewActivity" />
+100-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:80:9-73
+100-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:80:19-70
+101        <activity
+101-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:81:9-90:20
+102            android:name="com.tur.bumerang.Global.Activity.SplashActivity"
+102-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:82:13-59
+103            android:screenOrientation="fullSensor" >
+103-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:83:13-51
+104            <intent-filter>
+104-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:84:13-89:29
+105                <action android:name="android.intent.action.MAIN" />
+105-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:85:17-69
+105-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:85:25-66
+106                <action android:name="android.intent.action.VIEW" />
+106-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:72:17-69
+106-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:72:25-66
+107
+108                <category android:name="android.intent.category.LAUNCHER" />
+108-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:88:17-77
+108-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:88:27-74
+109            </intent-filter>
+110        </activity>
+111        <activity
+111-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:91:9-93:54
+112            android:name="com.tur.bumerang.Global.Activity.IntroduceActivity"
+112-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:92:13-62
+113            android:screenOrientation="fullSensor" />
+113-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:93:13-51
+114        <activity
+114-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:94:9-96:54
+115            android:name="com.tur.bumerang.Global.Activity.HomeActivity"
+115-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:95:13-57
+116            android:screenOrientation="fullSensor" />
+116-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:96:13-51
+117        <activity
+117-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:97:9-99:54
+118            android:name="com.tur.bumerang.Standard.Activity.SignupStandardActivity"
+118-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:98:13-69
+119            android:screenOrientation="fullSensor" />
+119-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:99:13-51
+120        <activity
+120-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:100:9-102:54
+121            android:name="com.tur.bumerang.Standard.Activity.RentPageActivity"
+121-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:101:13-63
+122            android:screenOrientation="fullSensor" />
+122-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:102:13-51
+123        <activity
+123-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:103:9-105:54
+124            android:name="com.tur.bumerang.Business.Activity.SignupBusinessActivity"
+124-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:104:13-69
+125            android:screenOrientation="fullSensor" />
+125-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:105:13-51
+126        <activity
+126-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:106:9-108:54
+127            android:name="com.tur.bumerang.Global.Activity.RegisterActivity"
+127-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:107:13-61
+128            android:screenOrientation="fullSensor" />
+128-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:108:13-51
+129        <activity
+129-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:109:9-111:54
+130            android:name="com.tur.bumerang.Global.Activity.userTypeSelect"
+130-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:110:13-59
+131            android:screenOrientation="fullSensor" />
+131-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:111:13-51
+132        <activity
+132-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:112:9-114:54
+133            android:name="com.tur.bumerang.Global.Activity.LoginActivity"
+133-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:113:13-58
+134            android:screenOrientation="fullSensor" />
+134-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:114:13-51
+135        <activity android:name="com.tur.bumerang.Global.Activity.DetailCarActivity" />
+135-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:115:9-71
+135-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:115:19-68
+136        <activity
+136-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:116:9-118:54
+137            android:name="com.tur.bumerang.Global.Activity.DetailbikeActivity"
+137-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:117:13-63
+138            android:screenOrientation="fullSensor" />
+138-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:118:13-51
+139        <activity
+139-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:119:9-121:54
+140            android:name="com.tur.bumerang.Global.Activity.DetaildressActivity"
+140-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:120:13-64
+141            android:screenOrientation="fullSensor" />
+141-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:121:13-51
+142        <activity
+142-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:122:9-124:54
+143            android:name="com.tur.bumerang.Global.Activity.DetailcameraActivity"
+143-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:123:13-65
+144            android:screenOrientation="fullSensor" />
+144-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:124:13-51
+145        <activity
+145-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:125:9-127:54
+146            android:name="com.tur.bumerang.Global.Activity.DetailhomeActivity"
+146-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:126:13-63
+147            android:screenOrientation="fullSensor" />
+147-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:127:13-51
+148        <activity
+148-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:128:9-130:54
+149            android:name="com.tur.bumerang.Global.Activity.DetailcaravanActivity"
+149-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:129:13-66
+150            android:screenOrientation="fullSensor" />
+150-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:130:13-51
+151        <activity
+151-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:131:9-133:54
+152            android:name="com.tur.bumerang.Global.Activity.DetailvehicleActivity"
+152-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:132:13-66
+153            android:screenOrientation="fullSensor" />
+153-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:133:13-51
+154        <activity
+154-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:134:9-136:54
+155            android:name="com.tur.bumerang.Global.Activity.DetailsporeActivity"
+155-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:135:13-64
+156            android:screenOrientation="fullSensor" />
+156-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:136:13-51
+157        <activity
+157-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:137:9-139:54
+158            android:name="com.tur.bumerang.Global.Activity.DetailkampActivity"
+158-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:138:13-63
+159            android:screenOrientation="fullSensor" />
+159-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:139:13-51
+160        <activity
+160-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:140:9-142:54
+161            android:name="com.tur.bumerang.Global.Activity.DetailmusicActivity"
+161-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:141:13-64
+162            android:screenOrientation="fullSensor" />
+162-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:142:13-51
+163        <activity
+163-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:143:9-145:54
+164            android:name="com.tur.bumerang.Business.Activity.MembershipActivity"
+164-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:144:13-65
+165            android:screenOrientation="fullSensor" />
+165-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:145:13-51
+166        <activity
+166-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:146:9-148:54
+167            android:name="com.tur.bumerang.Business.Activity.ReciveRequestActivity"
+167-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:147:13-68
+168            android:screenOrientation="fullSensor" />
+168-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:148:13-51
+169        <activity
+169-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:149:9-151:54
+170            android:name="com.tur.bumerang.Global.Activity.UserProfileActivity"
+170-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:150:13-64
+171            android:screenOrientation="fullSensor" />
+171-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:151:13-51
+172        <activity
+172-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:152:9-154:54
+173            android:name="com.tur.bumerang.Business.Activity.SelectCategoryRegisterActivity"
+173-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:153:13-77
+174            android:screenOrientation="fullSensor" />
+174-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:154:13-51
+175        <activity
+175-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:155:9-157:54
+176            android:name="com.tur.bumerang.Global.Activity.SelectCategoryActivity"
+176-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:156:13-67
+177            android:screenOrientation="fullSensor" />
+177-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:157:13-51
+178        <activity
+178-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:158:9-160:54
+179            android:name="com.tur.bumerang.Global.Activity.ProfileSettingActivity"
+179-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:159:13-67
+180            android:screenOrientation="fullSensor" />
+180-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:160:13-51
+181        <activity
+181-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:161:9-163:54
+182            android:name="com.tur.bumerang.Business.Activity.UploadApartmentActivity"
+182-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:162:13-70
+183            android:screenOrientation="fullSensor" />
+183-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:163:13-51
+184        <activity
+184-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:164:9-166:54
+185            android:name="com.tur.bumerang.Business.Activity.UploadRentalcarActivity"
+185-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:165:13-70
+186            android:screenOrientation="fullSensor" />
+186-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:166:13-51
+187        <activity
+187-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:167:9-169:54
+188            android:name="com.tur.bumerang.Business.Activity.UploadCaravanActivity"
+188-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:168:13-68
+189            android:screenOrientation="fullSensor" />
+189-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:169:13-51
+190        <activity
+190-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:170:9-172:54
+191            android:name="com.tur.bumerang.Business.Activity.UploadVehicleActivity"
+191-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:171:13-68
+192            android:screenOrientation="fullSensor" />
+192-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:172:13-51
+193        <activity
+193-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:173:9-175:54
+194            android:name="com.tur.bumerang.Business.Activity.UploadBikeActivity"
+194-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:174:13-65
+195            android:screenOrientation="fullSensor" />
+195-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:175:13-51
+196        <activity
+196-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:176:9-178:54
+197            android:name="com.tur.bumerang.Business.Activity.UploadDressActivity"
+197-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:177:13-66
+198            android:screenOrientation="fullSensor" />
+198-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:178:13-51
+199        <activity
+199-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:179:9-181:54
+200            android:name="com.tur.bumerang.Business.Activity.UploadCameraActivity"
+200-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:180:13-67
+201            android:screenOrientation="fullSensor" />
+201-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:181:13-51
+202        <activity
+202-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:182:9-184:54
+203            android:name="com.tur.bumerang.Business.Activity.UploadSporeActivity"
+203-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:183:13-66
+204            android:screenOrientation="fullSensor" />
+204-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:184:13-51
+205        <activity
+205-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:185:9-187:54
+206            android:name="com.tur.bumerang.Business.Activity.UploadKampActivity"
+206-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:186:13-65
+207            android:screenOrientation="fullSensor" />
+207-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:187:13-51
+208        <activity
+208-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:188:9-190:54
+209            android:name="com.tur.bumerang.Business.Activity.UploadMusicActivity"
+209-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:189:13-66
+210            android:screenOrientation="fullSensor" />
+210-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:190:13-51
+211        <activity
+211-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:191:9-193:54
+212            android:name="com.tur.bumerang.Business.Activity.UploadOtherActivity"
+212-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:192:13-66
+213            android:screenOrientation="fullSensor" />
+213-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:193:13-51
+214        <activity
+214-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:194:9-198:20
+215            android:name="com.tur.bumerang.Business.Activity.UserProfileBusinessActivity"
+215-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:195:13-74
+216            android:screenOrientation="fullSensor" >
+216-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:196:13-51
+217        </activity>
+218        <activity
+218-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:199:9-201:54
+219            android:name="com.tur.bumerang.Global.Activity.ChattingHistoryActivity"
+219-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:200:13-68
+220            android:screenOrientation="fullSensor" />
+220-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:201:13-51
+221        <activity
+221-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:202:9-204:54
+222            android:name="com.tur.bumerang.Global.Activity.ChattingActivity"
+222-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:203:13-61
+223            android:screenOrientation="fullSensor" />
+223-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:204:13-51
+224        <activity
+224-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:205:9-207:54
+225            android:name="com.tur.bumerang.Global.Activity.RequestHistoryActivity"
+225-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:206:13-67
+226            android:screenOrientation="fullSensor" />
+226-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:207:13-51
+227        <activity
+227-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:208:9-210:59
+228            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+228-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:209:13-76
+229            android:theme="@style/Base.Theme.AppCompat" />
+229-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:210:13-56
+230        <activity
+230-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:211:9-213:54
+231            android:name="com.tur.bumerang.Business.Activity.AdsSplashActivity"
+231-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:212:13-64
+232            android:screenOrientation="fullSensor" />
+232-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:213:13-51
+233        <activity
+233-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:214:9-216:54
+234            android:name="com.tur.bumerang.Global.Activity.UserProductsActivity"
+234-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:215:13-65
+235            android:screenOrientation="fullSensor" />
+235-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:216:13-51
+236        <activity
+236-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:217:9-219:54
+237            android:name="com.tur.bumerang.Global.Activity.RegisterCompletedActivity"
+237-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:218:13-70
+238            android:screenOrientation="fullSensor" />
+238-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:219:13-51
+239        <activity
+239-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:220:9-222:54
+240            android:name="com.tur.bumerang.Global.Activity.RequestSentCompletedActivity"
+240-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:221:13-73
+241            android:screenOrientation="fullSensor" />
+241-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:222:13-51
+242        <activity
+242-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:223:9-225:54
+243            android:name="com.tur.bumerang.Global.Activity.RatingActivity"
+243-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:224:13-59
+244            android:screenOrientation="fullSensor" />
+244-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:225:13-51
+245
+246        <service
+246-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:227:9-229:38
+247            android:name="com.tur.bumerang.Services.GpsService"
+247-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:228:13-48
+248            android:enabled="true" />
+248-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:229:13-35
+249        <service
+249-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:230:9-236:19
+250            android:name="com.tur.bumerang.fcm.FcmMessagingService"
+250-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:231:13-52
+251            android:exported="false" >
+251-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:232:13-37
+252            <intent-filter>
+252-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:233:13-235:29
+253                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+253-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:234:17-78
+253-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:234:25-75
+254            </intent-filter>
+255        </service>
+256
+257        <activity
+257-->[com.github.nguyenhoanglam:ImagePicker:1.3.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\242255f6c41cfec38f134edd20d1a80b\ImagePicker-1.3.3\AndroidManifest.xml:16:9-19:67
+258            android:name="com.nguyenhoanglam.imagepicker.ui.imagepicker.ImagePickerActivity"
+258-->[com.github.nguyenhoanglam:ImagePicker:1.3.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\242255f6c41cfec38f134edd20d1a80b\ImagePicker-1.3.3\AndroidManifest.xml:17:13-93
+259            android:configChanges="orientation|screenSize"
+259-->[com.github.nguyenhoanglam:ImagePicker:1.3.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\242255f6c41cfec38f134edd20d1a80b\ImagePicker-1.3.3\AndroidManifest.xml:18:13-59
+260            android:theme="@style/imagepicker_ImagePickerTheme" />
+260-->[com.github.nguyenhoanglam:ImagePicker:1.3.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\242255f6c41cfec38f134edd20d1a80b\ImagePicker-1.3.3\AndroidManifest.xml:19:13-64
+261        <activity
+261-->[com.github.nguyenhoanglam:ImagePicker:1.3.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\242255f6c41cfec38f134edd20d1a80b\ImagePicker-1.3.3\AndroidManifest.xml:20:9-23:62
+262            android:name="com.nguyenhoanglam.imagepicker.ui.camera.CameraActivty"
+262-->[com.github.nguyenhoanglam:ImagePicker:1.3.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\242255f6c41cfec38f134edd20d1a80b\ImagePicker-1.3.3\AndroidManifest.xml:21:13-82
+263            android:screenOrientation="portrait"
+263-->[com.github.nguyenhoanglam:ImagePicker:1.3.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\242255f6c41cfec38f134edd20d1a80b\ImagePicker-1.3.3\AndroidManifest.xml:22:13-49
+264            android:theme="@style/imagepicker_CameraTheme" />
+264-->[com.github.nguyenhoanglam:ImagePicker:1.3.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\242255f6c41cfec38f134edd20d1a80b\ImagePicker-1.3.3\AndroidManifest.xml:23:13-59
+265
+266        <provider
+266-->[com.github.nguyenhoanglam:ImagePicker:1.3.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\242255f6c41cfec38f134edd20d1a80b\ImagePicker-1.3.3\AndroidManifest.xml:25:9-33:20
+267            android:name="androidx.core.content.FileProvider"
+267-->[com.github.nguyenhoanglam:ImagePicker:1.3.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\242255f6c41cfec38f134edd20d1a80b\ImagePicker-1.3.3\AndroidManifest.xml:26:13-62
+268            android:authorities="com.tur.bumerang.fileprovider"
+268-->[com.github.nguyenhoanglam:ImagePicker:1.3.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\242255f6c41cfec38f134edd20d1a80b\ImagePicker-1.3.3\AndroidManifest.xml:27:13-64
+269            android:exported="false"
+269-->[com.github.nguyenhoanglam:ImagePicker:1.3.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\242255f6c41cfec38f134edd20d1a80b\ImagePicker-1.3.3\AndroidManifest.xml:28:13-37
+270            android:grantUriPermissions="true" >
+270-->[com.github.nguyenhoanglam:ImagePicker:1.3.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\242255f6c41cfec38f134edd20d1a80b\ImagePicker-1.3.3\AndroidManifest.xml:29:13-47
+271            <meta-data
+271-->[com.github.nguyenhoanglam:ImagePicker:1.3.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\242255f6c41cfec38f134edd20d1a80b\ImagePicker-1.3.3\AndroidManifest.xml:30:13-32:66
+272                android:name="android.support.FILE_PROVIDER_PATHS"
+272-->[com.github.nguyenhoanglam:ImagePicker:1.3.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\242255f6c41cfec38f134edd20d1a80b\ImagePicker-1.3.3\AndroidManifest.xml:31:17-67
+273                android:resource="@xml/imagepicker_file_paths" />
+273-->[com.github.nguyenhoanglam:ImagePicker:1.3.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\242255f6c41cfec38f134edd20d1a80b\ImagePicker-1.3.3\AndroidManifest.xml:32:17-63
+274        </provider>
+275
+276        <activity android:name="com.facebook.CustomTabMainActivity" />
+276-->[com.facebook.android:facebook-common:5.13.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\f17075107ec3228f38bacbd0c3c76cdc\jetified-facebook-common-5.13.0\AndroidManifest.xml:33:9-71
+276-->[com.facebook.android:facebook-common:5.13.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\f17075107ec3228f38bacbd0c3c76cdc\jetified-facebook-common-5.13.0\AndroidManifest.xml:33:19-68
+277        <!--
+278             FirebaseMessagingService performs security checks at runtime,
+279             but set to not exported to explicitly avoid allowing another app to call it.
+280        -->
+281        <service
+281-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0455e91b0440e800048bbde05adf7c79\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:28:9-34:19
+282            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+282-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0455e91b0440e800048bbde05adf7c79\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:29:13-82
+283            android:exported="false" >
+283-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0455e91b0440e800048bbde05adf7c79\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:30:13-37
+284            <intent-filter android:priority="-500" >
+284-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:233:13-235:29
+285                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+285-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:234:17-78
+285-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:234:25-75
+286            </intent-filter>
+287        </service>
+288        <service
+288-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0455e91b0440e800048bbde05adf7c79\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:35:9-41:19
+289            android:name="com.google.firebase.components.ComponentDiscoveryService"
+289-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0455e91b0440e800048bbde05adf7c79\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:36:13-84
+290            android:directBootAware="true"
+290-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0801e26023e0c088ed1520bdc3ae20ed\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+291            android:exported="false" >
+291-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0455e91b0440e800048bbde05adf7c79\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:37:13-37
+292            <meta-data
+292-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0455e91b0440e800048bbde05adf7c79\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:38:13-40:85
+293                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+293-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0455e91b0440e800048bbde05adf7c79\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:39:17-119
+294                android:value="com.google.firebase.components.ComponentRegistrar" />
+294-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0455e91b0440e800048bbde05adf7c79\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:40:17-82
+295            <meta-data
+295-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1b13ddd0979a31d5382231a327fe44a7\firebase-database-19.2.0\AndroidManifest.xml:32:13-34:85
+296                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+296-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1b13ddd0979a31d5382231a327fe44a7\firebase-database-19.2.0\AndroidManifest.xml:33:17-109
+297                android:value="com.google.firebase.components.ComponentRegistrar" />
+297-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1b13ddd0979a31d5382231a327fe44a7\firebase-database-19.2.0\AndroidManifest.xml:34:17-82
+298            <meta-data
+298-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\638a888dc69abcf1f17dc65c27bf54c8\firebase-storage-19.1.0\AndroidManifest.xml:33:13-35:85
+299                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+299-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\638a888dc69abcf1f17dc65c27bf54c8\firebase-storage-19.1.0\AndroidManifest.xml:34:17-107
+300                android:value="com.google.firebase.components.ComponentRegistrar" />
+300-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\638a888dc69abcf1f17dc65c27bf54c8\firebase-storage-19.1.0\AndroidManifest.xml:35:17-82
+301            <meta-data
+301-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
+302                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+302-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
+303                android:value="com.google.firebase.components.ComponentRegistrar" />
+303-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
+304            <meta-data
+304-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\559f094854fa85bd072da76bc0e0e01f\play-services-measurement-api-17.2.1\AndroidManifest.xml:30:13-32:85
+305                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+305-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\559f094854fa85bd072da76bc0e0e01f\play-services-measurement-api-17.2.1\AndroidManifest.xml:31:17-139
+306                android:value="com.google.firebase.components.ComponentRegistrar" />
+306-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\559f094854fa85bd072da76bc0e0e01f\play-services-measurement-api-17.2.1\AndroidManifest.xml:32:17-82
+307            <meta-data
+307-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:32:13-34:85
+308                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+308-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:33:17-96
+309                android:value="com.google.firebase.components.ComponentRegistrar" />
+309-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:34:17-82
+310            <meta-data
+310-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\e0da70c9258f6893a2373fb18ae7e095\firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+311                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+311-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\e0da70c9258f6893a2373fb18ae7e095\firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+312                android:value="com.google.firebase.components.ComponentRegistrar" />
+312-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\e0da70c9258f6893a2373fb18ae7e095\firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+313        </service>
+314
+315        <activity
+315-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
+316            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+316-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
+317            android:excludeFromRecents="true"
+317-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
+318            android:exported="true"
+318-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
+319            android:launchMode="singleTask"
+319-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
+320            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+320-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
+321            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+321-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
+322        <activity
+322-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:23:9-27:75
+323            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+323-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:24:13-93
+324            android:excludeFromRecents="true"
+324-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:25:13-46
+325            android:exported="false"
+325-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:26:13-37
+326            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+326-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:27:13-72
+327        <!--
+328            Service handling Google Sign-In user revocation. For apps that do not integrate with
+329            Google Sign-In, this service will never be started.
+330        -->
+331        <service
+331-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:33:9-36:110
+332            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+332-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:34:13-89
+333            android:exported="true"
+333-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:35:13-36
+334            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" /> <!-- Needs to be explicitly declared on P+ -->
+334-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:36:13-107
+335        <uses-library
+335-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\82653396968af777fdb1f59f7c3ba8c3\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+336            android:name="org.apache.http.legacy"
+336-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\82653396968af777fdb1f59f7c3ba8c3\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+337            android:required="false" />
+337-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\82653396968af777fdb1f59f7c3ba8c3\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+338
+339        <provider
+339-->[com.squareup.picasso:picasso:2.71828] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\3b90537323e68d166099756d2a61d260\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+340            android:name="com.squareup.picasso.PicassoProvider"
+340-->[com.squareup.picasso:picasso:2.71828] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\3b90537323e68d166099756d2a61d260\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+341            android:authorities="com.tur.bumerang.com.squareup.picasso"
+341-->[com.squareup.picasso:picasso:2.71828] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\3b90537323e68d166099756d2a61d260\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+342            android:exported="false" />
+342-->[com.squareup.picasso:picasso:2.71828] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\3b90537323e68d166099756d2a61d260\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+343
+344        <receiver
+344-->[com.google.android.gms:play-services-analytics:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d2f8a72f89b672e577773b9ce4143426\play-services-analytics-17.0.0\AndroidManifest.xml:30:9-34:20
+345            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+345-->[com.google.android.gms:play-services-analytics:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d2f8a72f89b672e577773b9ce4143426\play-services-analytics-17.0.0\AndroidManifest.xml:31:13-78
+346            android:enabled="true"
+346-->[com.google.android.gms:play-services-analytics:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d2f8a72f89b672e577773b9ce4143426\play-services-analytics-17.0.0\AndroidManifest.xml:32:13-35
+347            android:exported="false" >
+347-->[com.google.android.gms:play-services-analytics:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d2f8a72f89b672e577773b9ce4143426\play-services-analytics-17.0.0\AndroidManifest.xml:33:13-37
+348        </receiver>
+349
+350        <service
+350-->[com.google.android.gms:play-services-analytics:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d2f8a72f89b672e577773b9ce4143426\play-services-analytics-17.0.0\AndroidManifest.xml:36:9-39:40
+351            android:name="com.google.android.gms.analytics.AnalyticsService"
+351-->[com.google.android.gms:play-services-analytics:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d2f8a72f89b672e577773b9ce4143426\play-services-analytics-17.0.0\AndroidManifest.xml:37:13-77
+352            android:enabled="true"
+352-->[com.google.android.gms:play-services-analytics:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d2f8a72f89b672e577773b9ce4143426\play-services-analytics-17.0.0\AndroidManifest.xml:38:13-35
+353            android:exported="false" />
+353-->[com.google.android.gms:play-services-analytics:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d2f8a72f89b672e577773b9ce4143426\play-services-analytics-17.0.0\AndroidManifest.xml:39:13-37
+354        <service
+354-->[com.google.android.gms:play-services-analytics:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d2f8a72f89b672e577773b9ce4143426\play-services-analytics-17.0.0\AndroidManifest.xml:40:9-44:72
+355            android:name="com.google.android.gms.analytics.AnalyticsJobService"
+355-->[com.google.android.gms:play-services-analytics:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d2f8a72f89b672e577773b9ce4143426\play-services-analytics-17.0.0\AndroidManifest.xml:41:13-80
+356            android:enabled="true"
+356-->[com.google.android.gms:play-services-analytics:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d2f8a72f89b672e577773b9ce4143426\play-services-analytics-17.0.0\AndroidManifest.xml:42:13-35
+357            android:exported="false"
+357-->[com.google.android.gms:play-services-analytics:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d2f8a72f89b672e577773b9ce4143426\play-services-analytics-17.0.0\AndroidManifest.xml:43:13-37
+358            android:permission="android.permission.BIND_JOB_SERVICE" />
+358-->[com.google.android.gms:play-services-analytics:17.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d2f8a72f89b672e577773b9ce4143426\play-services-analytics-17.0.0\AndroidManifest.xml:44:13-69
+359
+360        <receiver
+360-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:37:9-44:20
+361            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+361-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:38:13-78
+362            android:exported="true"
+362-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:39:13-36
+363            android:permission="com.google.android.c2dm.permission.SEND" >
+363-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:40:13-73
+364            <intent-filter>
+364-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:41:13-43:29
+365                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+365-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:42:17-81
+365-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:42:25-78
+366            </intent-filter>
+367        </receiver>
+368
+369        <activity
+369-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\6d206c10dfcd7e4d261b33c292c090cb\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+370            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+370-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\6d206c10dfcd7e4d261b33c292c090cb\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+371            android:exported="false"
+371-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\6d206c10dfcd7e4d261b33c292c090cb\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+372            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+372-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\6d206c10dfcd7e4d261b33c292c090cb\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+373
+374        <meta-data
+374-->[com.android.billingclient:billing:2.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\f48f391ccb033df2567d1a52f32d7981\billing-2.1.0\AndroidManifest.xml:13:9-15:37
+375            android:name="com.google.android.play.billingclient.version"
+375-->[com.android.billingclient:billing:2.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\f48f391ccb033df2567d1a52f32d7981\billing-2.1.0\AndroidManifest.xml:14:13-73
+376            android:value="2.1.0" />
+376-->[com.android.billingclient:billing:2.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\f48f391ccb033df2567d1a52f32d7981\billing-2.1.0\AndroidManifest.xml:15:13-34
+377
+378        <activity
+378-->[com.android.billingclient:billing:2.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\f48f391ccb033df2567d1a52f32d7981\billing-2.1.0\AndroidManifest.xml:17:9-20:75
+379            android:name="com.android.billingclient.api.ProxyBillingActivity"
+379-->[com.android.billingclient:billing:2.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\f48f391ccb033df2567d1a52f32d7981\billing-2.1.0\AndroidManifest.xml:18:13-78
+380            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+380-->[com.android.billingclient:billing:2.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\f48f391ccb033df2567d1a52f32d7981\billing-2.1.0\AndroidManifest.xml:19:13-96
+381            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+381-->[com.android.billingclient:billing:2.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\f48f391ccb033df2567d1a52f32d7981\billing-2.1.0\AndroidManifest.xml:20:13-72
+382
+383        <provider
+383-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0801e26023e0c088ed1520bdc3ae20ed\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+384            android:name="com.google.firebase.provider.FirebaseInitProvider"
+384-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0801e26023e0c088ed1520bdc3ae20ed\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+385            android:authorities="com.tur.bumerang.firebaseinitprovider"
+385-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0801e26023e0c088ed1520bdc3ae20ed\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+386            android:exported="false"
+386-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0801e26023e0c088ed1520bdc3ae20ed\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+387            android:initOrder="100" />
+387-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0801e26023e0c088ed1520bdc3ae20ed\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+388
+389        <receiver
+389-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:29:9-33:20
+390            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+390-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:30:13-85
+391            android:enabled="true"
+391-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:31:13-35
+392            android:exported="false" >
+392-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:32:13-37
+393        </receiver>
+394        <receiver
+394-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:34:9-42:20
+395            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+395-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:35:13-100
+396            android:enabled="true"
+396-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:36:13-35
+397            android:exported="true"
+397-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:37:13-36
+398            android:permission="android.permission.INSTALL_PACKAGES" >
+398-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:38:13-69
+399            <intent-filter>
+399-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:39:13-41:29
+400                <action android:name="com.android.vending.INSTALL_REFERRER" />
+400-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:40:17-79
+400-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:40:25-76
+401            </intent-filter>
+402        </receiver>
+403
+404        <service
+404-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:44:9-47:40
+405            android:name="com.google.android.gms.measurement.AppMeasurementService"
+405-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:45:13-84
+406            android:enabled="true"
+406-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:46:13-35
+407            android:exported="false" />
+407-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:47:13-37
+408        <service
+408-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:48:9-52:72
+409            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+409-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:49:13-87
+410            android:enabled="true"
+410-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:50:13-35
+411            android:exported="false"
+411-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:51:13-37
+412            android:permission="android.permission.BIND_JOB_SERVICE" />
+412-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:52:13-69
+413
+414        <meta-data
+414-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:50:13-52:72
+415            android:name="com.google.android.gms.version"
+415-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:51:17-62
+416            android:value="@integer/google_play_services_version" />
+416-->E:\Our_data\bumerang_android_final0331\app\src\main\AndroidManifest.xml:52:17-70
+417        <!--
+418         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+419         with the application context. This config is merged in with the host app's manifest,
+420         but there can only be one provider with the same authority activated at any given
+421         point; so if the end user has two or more different apps that use Facebook SDK, only the
+422         first one will be able to use the provider. To work around this problem, we use the
+423         following placeholder in the authority to identify each host application as if it was
+424         a completely different provider.
+425        -->
+426        <provider
+426-->[com.facebook.android:facebook-core:5.13.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\20a0757b53fa55ee8f96cba382b10a79\jetified-facebook-core-5.13.0\AndroidManifest.xml:39:9-42:40
+427            android:name="com.facebook.internal.FacebookInitProvider"
+427-->[com.facebook.android:facebook-core:5.13.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\20a0757b53fa55ee8f96cba382b10a79\jetified-facebook-core-5.13.0\AndroidManifest.xml:40:13-70
+428            android:authorities="com.tur.bumerang.FacebookInitProvider"
+428-->[com.facebook.android:facebook-core:5.13.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\20a0757b53fa55ee8f96cba382b10a79\jetified-facebook-core-5.13.0\AndroidManifest.xml:41:13-72
+429            android:exported="false" />
+429-->[com.facebook.android:facebook-core:5.13.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\20a0757b53fa55ee8f96cba382b10a79\jetified-facebook-core-5.13.0\AndroidManifest.xml:42:13-37
+430
+431        <receiver
+431-->[com.facebook.android:facebook-core:5.13.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\20a0757b53fa55ee8f96cba382b10a79\jetified-facebook-core-5.13.0\AndroidManifest.xml:44:9-50:20
+432            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+432-->[com.facebook.android:facebook-core:5.13.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\20a0757b53fa55ee8f96cba382b10a79\jetified-facebook-core-5.13.0\AndroidManifest.xml:45:13-86
+433            android:exported="false" >
+433-->[com.facebook.android:facebook-core:5.13.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\20a0757b53fa55ee8f96cba382b10a79\jetified-facebook-core-5.13.0\AndroidManifest.xml:46:13-37
+434            <intent-filter>
+434-->[com.facebook.android:facebook-core:5.13.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\20a0757b53fa55ee8f96cba382b10a79\jetified-facebook-core-5.13.0\AndroidManifest.xml:47:13-49:29
+435                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+435-->[com.facebook.android:facebook-core:5.13.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\20a0757b53fa55ee8f96cba382b10a79\jetified-facebook-core-5.13.0\AndroidManifest.xml:48:17-95
+435-->[com.facebook.android:facebook-core:5.13.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\20a0757b53fa55ee8f96cba382b10a79\jetified-facebook-core-5.13.0\AndroidManifest.xml:48:25-92
+436            </intent-filter>
+437        </receiver>
+438        <receiver
+438-->[com.facebook.android:facebook-core:5.13.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\20a0757b53fa55ee8f96cba382b10a79\jetified-facebook-core-5.13.0\AndroidManifest.xml:51:9-58:20
+439            android:name="com.facebook.CampaignTrackingReceiver"
+439-->[com.facebook.android:facebook-core:5.13.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\20a0757b53fa55ee8f96cba382b10a79\jetified-facebook-core-5.13.0\AndroidManifest.xml:52:13-65
+440            android:exported="true"
+440-->[com.facebook.android:facebook-core:5.13.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\20a0757b53fa55ee8f96cba382b10a79\jetified-facebook-core-5.13.0\AndroidManifest.xml:53:13-36
+441            android:permission="android.permission.INSTALL_PACKAGES" >
+441-->[com.facebook.android:facebook-core:5.13.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\20a0757b53fa55ee8f96cba382b10a79\jetified-facebook-core-5.13.0\AndroidManifest.xml:54:13-69
+442            <intent-filter>
+442-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:39:13-41:29
+443                <action android:name="com.android.vending.INSTALL_REFERRER" />
+443-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:40:17-79
+443-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:40:25-76
+444            </intent-filter>
+445        </receiver>
+446
+447        <service
+447-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
+448            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+448-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
+449            android:exported="false" >
+449-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
+450            <meta-data
+450-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
+451                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+451-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
+452                android:value="cct" />
+452-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
+453        </service>
+454        <service
+454-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
+455            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+455-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
+456            android:exported="false"
+456-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
+457            android:permission="android.permission.BIND_JOB_SERVICE" >
+457-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
+458        </service>
+459
+460        <receiver
+460-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
+461            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+461-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
+462            android:exported="false" />
+462-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
+463    </application>
+464
+465</manifest>

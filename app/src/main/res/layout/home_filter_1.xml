@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/roomnumber"
+                    android:visibility="gone"
+                    android:textColor="@color/colorBlack"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="10dp"/>
+
+                <Spinner
+                    android:id="@+id/spinner_roomnumber_apart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:overlapAnchor="false"
+                    android:entries="@array/spinner_roomnumber"
+                    android:popupBackground="@drawable/spinner_ripple"
+                    android:background="@drawable/search_box_filter"
+                    android:textAlignment="center"
+                    android:tooltipText="Room_Number"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/heating"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="10dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <Spinner
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/spinner_heating_apart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:popupBackground="@drawable/spinner_ripple"
+                    android:entries="@array/spinner_heating"
+                    android:background="@drawable/search_box_filter"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/furbished"
+                    android:layout_gravity="center_horizontal"/>
+
+                <Spinner
+                    android:id="@+id/spinner_furbished_apart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:popupBackground="@drawable/spinner_ripple"
+                    android:entries="@array/spinner_furbished"
+                    android:background="@drawable/search_box_filter"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/price"
+                    android:layout_gravity="center_horizontal"/>
+
+                <Spinner
+                    android:id="@+id/spinner_price_apart"
+                    android:popupBackground="@drawable/spinner_ripple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:entries="@array/spinner_price_flat"
+                    android:background="@drawable/search_box_filter"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/deposit"
+                    android:layout_gravity="center_horizontal"/>
+
+                <Spinner
+                    android:id="@+id/spinner_deposit_apart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:popupBackground="@drawable/spinner_ripple"
+                    android:entries="@array/spinner_deposit"
+                    android:background="@drawable/search_box_filter"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

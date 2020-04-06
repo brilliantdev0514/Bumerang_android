@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "987559241902",
+    "firebase_url": "https://bumerangapp-689d1.firebaseio.com",
+    "project_id": "bumerangapp-689d1",
+    "storage_bucket": "bumerangapp-689d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987559241902:android:cf996d2c3f693a2ee3253f",
+        "android_client_info": {
+          "package_name": "com.tur.bumerang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987559241902-7tf8ivlidhgs14sdfgv1118509v4trkp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJhF-qgZMLmdrN2WQQLxX7Vrh3qz7VhwA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987559241902-7tf8ivlidhgs14sdfgv1118509v4trkp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

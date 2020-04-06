@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linSignBusiness"
+    android:padding="10dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <FrameLayout
+                android:layout_centerHorizontal="true"
+                android:id="@+id/frm_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imv_user_avatar_setting"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/bg_shadow_circle"
+                    android:src="@mipmap/ic_avatar1"
+                    android:padding="7dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="10dp"
+                    app:riv_corner_radius="30dp"/>
+
+                <ImageView
+                    android:id="@+id/ic_avatar_add"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@mipmap/ic_add"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="10dp"/>
+                <ImageView
+                    android:id="@+id/ic_avatar_remove"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="30dp"
+                    android:visibility="gone"
+                    android:src="@mipmap/cancelicon_gray"
+                    android:layout_gravity="top|right"
+                    android:layout_marginBottom="10dp"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_details"
+                android:layout_below="@+id/frm_profile"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:tint="#E93A35"
+                            android:src="@drawable/profilename_icon1"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="10dp"/>
+
+
+                        <EditText
+                            android:id="@+id/edt_profile_fname"
+                            android:layout_width="0dp"
+                            android:layout_height="36dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ripple"
+                            android:hint="@string/business_name"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:visibility="invisible"
+                        android:textColor="@color/colorBlue"
+                        android:text="Business name saved."
+                        android:layout_gravity="right"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:tint="#E93A35"
+                            android:src="@drawable/profilename_icon1"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="10dp"/>
+
+
+                        <EditText
+                            android:id="@+id/edt_profile_lname"
+                            android:layout_width="0dp"
+                            android:layout_height="36dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ripple"
+                            android:hint="@string/business_name"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:visibility="invisible"
+                        android:textColor="@color/colorBlue"
+                        android:text="Business name saved."
+                        android:layout_gravity="right"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/email_icon1"
+                            android:tint="#E93A35"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="10dp"/>
+
+
+                        <EditText
+                            android:id="@+id/edt_profile_email"
+                            android:layout_width="0dp"
+                            android:layout_height="36dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/ripple"
+                            android:hint="@string/email"
+                            android:inputType="textEmailAddress"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="@color/colorRed"
+                        android:text="Verify email."
+                        android:layout_gravity="right"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/call_icon1"
+                            android:layout_marginStart="10dp"
+                            android:tint="#E93A35"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="10dp"/>
+
+
+                        <EditText
+                            android:id="@+id/edt_profile_phone"
+                            android:layout_width="0dp"
+                            android:layout_height="36dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ripple"
+                            android:hint="Telefon Numarasi"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="10dp"
+                            android:inputType="textEmailAddress"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:visibility="invisible"
+                        android:textColor="@color/colorBlue"
+                        android:text="Business name saved."
+                        android:layout_gravity="right"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"
+                            android:tint="#E93A35"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/address_icon1" />
+
+
+                        <EditText
+                            android:id="@+id/edt_profile_address"
+                            android:layout_width="0dp"
+                            android:layout_height="36dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/ripple"
+                            android:hint="@string/address"
+                            android:inputType="textEmailAddress"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:visibility="invisible"
+                        android:textColor="@color/colorGray"
+                        android:text="Address undaved."
+                        android:layout_gravity="right"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL_city"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/password_icon1"
+                            android:layout_marginStart="10dp"
+                            android:tint="#E93A35"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="10dp"/>
+
+
+                        <EditText
+                            android:id="@+id/edt_profile_pwd"
+                            android:layout_width="0dp"
+                            android:layout_height="36dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/ripple"
+                            android:hint="Şifreniz"
+                            android:inputType="textVisiblePassword"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:visibility="invisible"
+                        android:textColor="@color/colorGray"
+                        android:text="Address undaved."
+                        android:layout_gravity="right"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <View
+                android:id="@+id/view1"
+                android:layout_below="@+id/LL_details"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                ></View>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/LL_payment"
+                android:layout_below="@+id/view1"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/payment_card"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="10dp"/>
+
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Pament Method"
+                    android:textSize="22dp"
+                    android:inputType="textEmailAddress"
+                    android:textStyle="italic" />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_below="@+id/LL_payment"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                ></View>
+
+            <LinearLayout
+                android:id="@+id/LL_privacy"
+                android:layout_below="@+id/view2"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <Button
+                    android:layout_marginTop="5dp"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:background="@drawable/login_bg"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="#F26C6B"
+                    android:layout_height="50dp"
+                    android:text="Terms and Conditions"
+                    android:visibility="gone"
+                    ></Button>
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:background="@drawable/login_bg"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:backgroundTint="#F26C6B"
+                    android:layout_height="50dp"
+                    android:text="Privacy Policy"
+                    ></Button>
+                <Button
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:backgroundTint="#F26C6B"
+                    android:background="@drawable/login_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Protection of personal Data"
+                    ></Button>
+                <Button
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:backgroundTint="#F26C6B"
+                    android:background="@drawable/login_bg"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:text="Need Help"
+                    ></Button>
+                <Button
+                    android:id="@+id/btn_membership"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:backgroundTint="#F26C6B"
+                    android:background="@drawable/login_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="MemberShip"
+                    android:visibility="gone"
+                    ></Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/LL_privacy"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btn_update_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/login_bg"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/update"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorWhite"/>
+
+                <Button
+                    android:id="@+id/btn_signout"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@mipmap/btn_logout"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

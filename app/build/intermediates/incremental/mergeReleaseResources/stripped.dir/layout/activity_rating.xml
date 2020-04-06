@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    app:ignore="NamespaceTypo">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/star_filled"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/userrating"
+        android:textSize="24dp"
+        android:textColor="@color/colorBlack"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="3dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="15dp"
+            android:background="@drawable/sel_cate_item_home"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"
+            card_view:cardBackgroundColor="@color/colorGray">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingTop="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/ic_car"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Short Product Info"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="40dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGray"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="3dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="15dp"
+            android:background="@drawable/sel_cate_item_home"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            card_view:cardBackgroundColor="@color/colorGray">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingTop="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/ic_car"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Short Product Info"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="40dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+            android:text="@string/userrating"/>
+
+        <com.willy.ratingbar.ScaleRatingBar
+            android:visibility="gone"
+            android:id="@+id/simpleRatingBar_userrating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:srb_numStars="10"
+            app:srb_minimumStars="1"
+            app:srb_rating="2"
+            app:srb_starWidth="22dp"
+            app:srb_starHeight="22dp"
+            app:srb_starPadding="5dp"
+            app:srb_stepSize="0.5"
+            app:srb_isIndicator="false"
+            app:srb_clickable="true"
+            app:srb_scrollable="true"
+            app:srb_clearRatingEnabled="true"
+            app:srb_drawableEmpty="@drawable/star_empty"
+            app:srb_drawableFilled="@drawable/star_filled"
+            android:layout_marginTop="5dp">
+
+        </com.willy.ratingbar.ScaleRatingBar>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+            android:text="@string/productcare"/>
+
+        <com.willy.ratingbar.ScaleRatingBar
+            android:id="@+id/simpleRatingBar_productcare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:srb_numStars="10"
+            app:srb_minimumStars="1"
+            android:visibility="gone"
+            app:srb_rating="2"
+            app:srb_starWidth="22dp"
+            app:srb_starHeight="22dp"
+            app:srb_starPadding="5dp"
+            app:srb_stepSize="0.5"
+            app:srb_isIndicator="false"
+            app:srb_clickable="true"
+            app:srb_scrollable="true"
+            app:srb_clearRatingEnabled="true"
+            app:srb_drawableEmpty="@drawable/star_empty"
+            app:srb_drawableFilled="@drawable/star_filled"
+            android:layout_marginTop="5dp">
+
+        </com.willy.ratingbar.ScaleRatingBar>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+            android:text="@string/ontime"/>
+
+        <com.willy.ratingbar.ScaleRatingBar
+            android:visibility="gone"
+            android:id="@+id/simpleRatingBar_ontime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:srb_numStars="10"
+            app:srb_minimumStars="1"
+            app:srb_rating="2"
+            app:srb_starWidth="22dp"
+            app:srb_starHeight="22dp"
+            app:srb_starPadding="5dp"
+            app:srb_stepSize="0.5"
+            app:srb_isIndicator="false"
+            app:srb_clickable="true"
+            app:srb_scrollable="true"
+            app:srb_clearRatingEnabled="true"
+            app:srb_drawableEmpty="@drawable/star_empty"
+            app:srb_drawableFilled="@drawable/star_filled"
+            android:layout_marginTop="5dp">
+
+        </com.willy.ratingbar.ScaleRatingBar>
+
+    </LinearLayout>
+
+    <Button style="@style/btnStyle1"
+        android:id="@+id/btnStart"
+        android:text="Give rate"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="true"
+        android:layout_marginTop="40dp"/>
+
+</LinearLayout>

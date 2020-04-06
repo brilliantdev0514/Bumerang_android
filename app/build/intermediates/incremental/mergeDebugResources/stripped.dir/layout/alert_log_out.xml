@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_marginLeft="60dp"
+    android:layout_marginRight="60dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lyt_forgot_dialog"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logout_question"
+                android:textColor="@color/colorBlue"
+                android:textSize="16dp"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp">
+            <Button
+                android:id="@+id/btn_select_cancel"
+                android:layout_marginRight="20dp"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_login"
+                android:text="@string/cancel"
+                android:textColor="@color/colorBlue"
+                android:textSize="14dp"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <Button
+                android:id="@+id/btn_select_logout"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_login"
+                android:text="@string/logout"
+                android:textColor="@color/colorBlue"
+                android:textSize="14dp"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/txv_close"
+            android:layout_width="30dp"
+            android:gravity="center"
+            android:layout_height="30dp"
+            android:textSize="28dp"
+            android:textColor="@color/colorRed"
+            android:text="x"
+            />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selece_category"
+            android:textColor="@color/colorBlack"
+            android:textSize="22dp"
+            android:layout_gravity="center_horizontal"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:id="@+id/card_sel_cate_car"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            >
+            <ImageView
+                android:id="@+id/img_car"
+                android:layout_centerVertical="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cars_icon"
+                android:layout_marginStart="7dp"/>
+
+
+            <TextView
+                android:id="@+id/txt_rental_car"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/img_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sel_cate_car"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"/>
+
+
+            <TextView
+                android:layout_below="@+id/txt_rental_car"
+                android:layout_toRightOf="@+id/img_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Günlük, haftalık ve aylık kiralık araçlarınızı Kurumsal Üyelik ayrıcalıklarıyla yayınlayın ve kiralayın "
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:layout_marginStart="20dp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:id="@+id/card_sel_cate_house"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            >
+            <ImageView
+                android:id="@+id/img_forapportment"
+                android:layout_centerVertical="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/apportment_icon"
+                android:layout_marginStart="7dp"/>
+
+
+            <TextView
+                android:id="@+id/txt_forapportment"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/img_forapportment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kiralık Daireler"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"/>
+
+
+            <TextView
+                android:layout_below="@+id/txt_forapportment"
+                android:layout_toRightOf="@+id/img_forapportment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Kurumsal üyelik paketiyle kısa/uzun dönem kiralık dairelerinizi müşterilerinize kiralayın "
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:layout_marginStart="20dp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:id="@+id/card_sel_cate_caravan"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            >
+            <ImageView
+                android:id="@+id/img_caravansh_rental"
+                android:layout_centerVertical="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/caravans_ixon"
+                android:layout_marginStart="7dp"/>
+
+
+            <TextView
+                android:id="@+id/txt_caravansh_rental"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/img_caravansh_rental"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kiralık Karavanlar"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"/>
+
+
+            <TextView
+                android:layout_below="@+id/txt_caravansh_rental"
+                android:layout_toRightOf="@+id/img_caravansh_rental"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Küçük bir macera peşindeki gezginlere Kurumsal Üyeliğin ayrıcalıklarıyla karavanlarınızı kiralayın "
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:layout_marginStart="20dp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:id="@+id/card_sel_cate_dress"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            >
+            <ImageView
+                android:id="@+id/img_clothing_rental"
+                android:layout_centerVertical="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/dress_icon"
+                android:layout_marginStart="7dp"/>
+
+
+            <TextView
+                android:id="@+id/txt_clothing_rental"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/img_clothing_rental"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kiralık Deniz Araçları"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"/>
+
+
+            <TextView
+                android:layout_below="@+id/txt_clothing_rental"
+                android:layout_toRightOf="@+id/img_clothing_rental"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Müşterilerinize Kurumsal Üyeliğinizle güven vererek yat, tekne veya botunuzu kiralayın"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:layout_marginStart="20dp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:id="@+id/card_sel_cate_vehicle"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            >
+            <ImageView
+                android:id="@+id/img_sea"
+                android:layout_centerVertical="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sea_vechecle_icon"
+                android:layout_marginStart="7dp"/>
+
+
+            <TextView
+                android:id="@+id/txt_sea_rental"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/img_sea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kiralık Giyim"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"/>
+
+
+            <TextView
+                android:layout_below="@+id/txt_sea_rental"
+                android:layout_toRightOf="@+id/img_sea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mağazanızdaki her çeşit renk ve bedenden kiralık elbiselerinizi Kurumsal Üyelik ile müşterilerinize kiralayın"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:layout_marginStart="20dp"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            card_view:cardElevation="0dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="15dp"
+            android:layout_marginTop="7dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:background="@drawable/sel_cate_item_home">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_membership_home"
+                    android:layout_marginStart="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sel_cate_house"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="22dp"
+                    android:layout_marginStart="20dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            card_view:cardElevation="0dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="15dp"
+            android:layout_marginTop="7dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sel_cate_item_car"
+                android:orientation="horizontal"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_membership_car"
+                    android:layout_marginStart="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sel_cate_car"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="22dp"
+                    android:layout_marginStart="20dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            card_view:cardElevation="0dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="15dp"
+            android:layout_marginTop="7dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:background="@drawable/sel_cate_item_caravan">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_membership_caravan"
+                    android:layout_marginStart="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sel_cate_caravan"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="22dp"
+                    android:layout_marginStart="20dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            card_view:cardElevation="0dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="15dp"
+            android:layout_marginTop="7dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="15dp"
+                android:paddingTop="7dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="7dp"
+                android:background="@drawable/sel_cate_item_vehicle">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="7dp"
+                    android:src="@mipmap/ic_membership_vehicle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/sel_cate_vehicle"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="22dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            card_view:cardElevation="0dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="15dp"
+            android:layout_marginTop="7dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:background="@drawable/sel_cate_item_dress">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_membership_dress"
+                    android:layout_marginStart="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sel_cate_dress"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="22dp"
+                    android:layout_marginStart="20dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

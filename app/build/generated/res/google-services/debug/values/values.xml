@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">987559241902-7tf8ivlidhgs14sdfgv1118509v4trkp.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://bumerangapp-689d1.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">987559241902</string>
+    <string name="google_api_key" translatable="false">AIzaSyDJhF-qgZMLmdrN2WQQLxX7Vrh3qz7VhwA</string>
+    <string name="google_app_id" translatable="false">1:987559241902:android:cf996d2c3f693a2ee3253f</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDJhF-qgZMLmdrN2WQQLxX7Vrh3qz7VhwA</string>
+    <string name="google_storage_bucket" translatable="false">bumerangapp-689d1.appspot.com</string>
+    <string name="project_id" translatable="false">bumerangapp-689d1</string>
+</resources>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.iamhabib:easy-preference:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8a1b44dfd0bf7aa9aed87433d6b1b068/easy-preference-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8a1b44dfd0bf7aa9aed87433d6b1b068/easy-preference-1.0.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.iamhabib/easy-preference/1.0.1/f4995e57c3db98bd5d912172ebe27815c1152afc/easy-preference-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.iamhabib/easy-preference/1.0.1/253de877c76d79f05a507c1d4b5a702db358d342/easy-preference-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

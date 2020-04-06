@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ogaclejapan.arclayout:library:1.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2fdf604aed9fd2d82f7b687b9c17f9f9/library-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2fdf604aed9fd2d82f7b687b9c17f9f9/library-1.1.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ogaclejapan.arclayout/library/1.1.0/657f92007f6898d784dbe8826a3d55aef9a084e8/library-1.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ogaclejapan.arclayout/library/1.1.0/7a186f874b8e8e2fec6bd1f6e48b007e1d057ebe/library-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

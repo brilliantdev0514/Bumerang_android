@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.huxq17.xrefreshview:xrefreshview:3.6.9@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/10056ee2ee9244435c23390f141ad9cf/jetified-xrefreshview-3.6.9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/10056ee2ee9244435c23390f141ad9cf/jetified-xrefreshview-3.6.9/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.huxq17.xrefreshview/xrefreshview/3.6.9/7de946f431b69e084e415022fa7f9329fa4d7aae/xrefreshview-3.6.9-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.huxq17.xrefreshview/xrefreshview/3.6.9/ddac86bbc64146e571d1c51a50aeba2dac12f8af/xrefreshview-3.6.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

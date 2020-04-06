@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fuel"
+                    android:textColor="@color/colorBlack"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="10dp"/>
+
+                <Spinner
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/spinner_fueltype_rental"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:entries="@array/spinner_fueltype"
+                    android:background="@drawable/search_box_filter"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="25dp">
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gear"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="10dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <Spinner
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/spinner_geartype_rental"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:entries="@array/spinner_gear"
+                    android:background="@drawable/search_box_filter"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="25dp">
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/doornumber"
+                    android:layout_gravity="center_horizontal"/>
+
+                <Spinner
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/spinner_doornumber_rental"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:entries="@array/spinner_doornumber"
+                    android:background="@drawable/search_box_filter"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="25dp">
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/cartype"
+                    android:layout_gravity="center_horizontal"/>
+
+                <Spinner
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/spinner_cartype_rental"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:entries="@array/spinner_cartype"
+                    android:background="@drawable/search_box_filter"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="25dp">
+
+<!--                <TextView-->
+<!--                    android:fontFamily="@font/forte"-->
+<!--                    android:visibility="visible"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="10dp"-->
+<!--                    android:textColor="@color/colorBlack"-->
+<!--                    android:text="@string/price"-->
+<!--                    android:layout_gravity="center_horizontal"/>-->
+
+                <Spinner
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/spinner_price_rental"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:entries="@array/spinner_price"
+                    android:background="@drawable/search_box_filter"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="25dp">
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/deposit"
+                    android:layout_gravity="center_horizontal"/>
+
+                <Spinner
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/spinner_deposit_rental"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:entries="@array/spinner_deposit"
+                    android:background="@drawable/search_box_filter"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

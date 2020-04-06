@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.applandeo:material-calendar-view:1.6.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1980756146f01c8e985ddcd222a4b4c1/material-calendar-view-1.6.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1980756146f01c8e985ddcd222a4b4c1/material-calendar-view-1.6.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.applandeo/material-calendar-view/1.6.0/e90aadccebda16c546ba60a6b70ca4278373eb53/material-calendar-view-1.6.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.applandeo/material-calendar-view/1.6.0/5027b5cfc69534efddfe9eedcf4ae487adb0034c/material-calendar-view-1.6.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

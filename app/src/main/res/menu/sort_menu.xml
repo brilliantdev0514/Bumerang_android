@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menuall"
+        android:title="@string/all"/>
+
+    <item android:id="@+id/menuhouse"
+        android:title="@string/sel_cate_house"/>
+
+    <item
+        android:id="@+id/menucar"
+        android:title="@string/sel_cate_car"/>
+
+    <item
+        android:id="@+id/menucaravan"
+        android:title="@string/sel_cate_caravan"/>
+
+    <item android:id="@+id/menuvehicle"
+        android:title="@string/sel_cate_vehicle"/>
+
+    <item android:id="@+id/menudress"
+        android:title="@string/sel_cate_dress"/>
+
+</menu>

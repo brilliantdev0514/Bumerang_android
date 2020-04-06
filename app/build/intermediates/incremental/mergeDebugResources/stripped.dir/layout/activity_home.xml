@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lyt_totalcontainer"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/lyt_maincontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/lyt_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/bg_bottom_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imv_chart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/ic_chart" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            >
+
+            <ImageView
+                android:id="@+id/imv_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/ic_chat"
+
+                />
+            <TextView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:text=""
+                android:layout_marginLeft="20dp"
+                android:id="@+id/txv_messagebadge"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:visibility="invisible"
+                android:textSize="12dp"
+                android:background="@drawable/bg_notify_red"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imv_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/ic_location" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imv_userinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/ic_profile" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imv_plus"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:src="@mipmap/ic_plus"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_home_signup"
+        style="@style/btnStyle2"
+        android:text="@string/login"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible"/>
+
+    <View
+        android:id="@+id/viewBlackTransparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blackTransparent"
+        android:visibility="invisible"/>
+
+    <com.ogaclejapan.arclayout.ArcLayout
+        android:id="@+id/arcLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:arc_axisRadius="114dp"
+        app:arc_freeAngle="true"
+        app:arc_origin="bottom"
+        app:arc_radius="140dp">
+
+<!--        <Button-->
+<!--            android:id="@+id/btnSignupWithStandard"-->
+<!--            style="@style/btnSmallBlueStyle"-->
+<!--            android:background="@drawable/search_box_filter"-->
+<!--            android:fontFamily="@font/forte"-->
+<!--            android:text="Standard"-->
+<!--            android:textColor="@color/red"-->
+<!--            app:arc_angle="45" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnSignupWithBusiness"-->
+<!--            style="@style/btnSmallRedStyle"-->
+<!--            android:fontFamily="@font/forte"-->
+<!--            android:text="Business"-->
+<!--            app:arc_angle="135" />-->
+
+
+    </com.ogaclejapan.arclayout.ArcLayout>
+
+</RelativeLayout>

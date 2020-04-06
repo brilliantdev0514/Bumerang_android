@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".Global.Activity.DetailCarActivity">
+
+    <ScrollView
+        android:id="@+id/scr_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollIndicators="none"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <FrameLayout
+                    android:id="@+id/viewPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"></FrameLayout>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_rent_bookmark"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="12dp"
+                    android:text="This product is under rent from "
+                    android:textColor="@color/colorRed"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rent_date"
+                    android:text="9/21/2018 to 9/21/2019"
+                    android:textColor="@color/colorRed"
+                    android:textSize="12dp"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:id="@+id/detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="CannonCamera EOS 60D"
+                    android:layout_gravity="center_vertical"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:id="@+id/imv_share_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/share_icon"
+                    android:layout_marginEnd="30dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/location_icon"/>
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="12dp"-->
+<!--                        android:textColor="@color/colorBlack"-->
+<!--                        android:text="@string/address"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_marginStart="10dp"/>-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txv_address"
+                        android:text="@string/wait_location"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/size_icon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/pixel_size"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txv_fuel"
+                        android:text="5184x3456"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@mipmap/icon_price"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/price"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/detail_price"
+                        android:text="210x120(mm)"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:tint="#bba7fd"
+                        android:layout_height="30dp"
+                        android:src="@mipmap/ic_camera_movie_size"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/movie"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txv_seat"
+                        android:text="Max 29min 59sec, 4GB"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorBlack"
+                android:text="@string/detail"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/detail_des"
+                android:textColor="@color/colorBlue"
+                android:text="@string/default_product_desc"
+                android:layout_marginTop="3dp"
+                android:textSize="16dp"
+                android:background="@drawable/bg_verify_info"
+                android:padding="10dp"/>
+
+            <com.tur.bumerang.Global.CustomeView.CustomMapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_shadow"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/detail_owner_avatar"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/profile_icon"
+                        android:padding="7dp"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:riv_corner_radius="50dp"
+
+                        app:riv_oval="true"
+                        app:riv_mutate_background="true"/>
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@mipmap/icon_plus_blue"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginBottom="15dp"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/detail_owner_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/business_name"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center"/>
+                <Button
+                    android:id="@+id/detail_owner_products"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@mipmap/user_profile_btn_back"
+                    android:text="@string/see_users_all_product"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/LL_rent"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/bg_rent"
+        android:orientation="horizontal"
+        android:padding="7dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/detail_bike_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100₺ \n Week"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/ic_favorite"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            android:layout_marginEnd="20dp"/>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/deletePro"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"
+            android:background="@drawable/trash"/>
+
+        <Button
+            android:id="@+id/btn_rent_camera"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:text="@string/alread_rent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/btn_rentstatus_red"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

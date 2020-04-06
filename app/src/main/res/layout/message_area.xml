@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:padding="3dp"
+    android:background="#fff"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColorHint="#afafaf"
+        android:textColor="#5c5c5c"
+        android:hint="Bir mesaj gönder..."
+        android:id="@+id/messageArea"
+        android:singleLine="false"
+        android:background="@null"
+        android:paddingLeft="15dp"
+        android:layout_gravity="center_vertical"
+        android:inputType="textShortMessage|textCapSentences"
+        android:maxHeight="80dp"
+        />
+    <ImageView
+        android:id="@+id/cameraButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:padding="5dp"
+        android:visibility="visible"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/ic_send"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical"
+        android:src="@android:drawable/ic_menu_send"
+        android:id="@+id/sendButton"/>
+</LinearLayout>

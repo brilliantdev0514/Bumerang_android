@@ -1,0 +1,327 @@
+<resources>
+    <string name="app_name">Bumerang</string>
+    <string name="apiKey">xOaRtGObrl5FCn9FeadWLIurjA8JgGxs</string>
+    <string name="secretKey">4eyhs8Zd2AmvzrJHKEbxXAbKf5wWUPAY</string>
+    <string name="baseUrl">https://api.iyzipay.com</string>
+    <string name="start">Başla</string>
+    <string name="end">Son</string>
+    <string name="skip">Geç </string>
+    <string name="next"> Devam </string>
+    <string name="next1">Başlayalım</string>
+    <string name="signup"> Kaydol</string>
+    <string name="logout">Çıkış Yap</string>
+    <string name="standard">Standart</string>
+    <string name="business">Kurumsal </string>
+    <string name="you_are_standard">You are standard user in Bumerang</string>
+    <string name="you_are_business">You are business user in Bumerang</string>
+    <string name="first_name"> Adınız </string>
+    <string name="last_name"> Soyadınız </string>
+    <string name="email">Mail Adresiniz</string>
+    <string name="password">Şifreniz </string>
+    <string name="confirm_pwd">Şifreyi tekrarla</string>
+    <string name="haveAccount">Do you have account?</string>
+    <string name="terms">Terms and Conditions</string>
+    <string name="policy">Privacy Policy</string>
+    <string name="standard_user">Register as standard user</string>
+    <string name="business_user">Register as business user</string>
+    <string name="login"> Kayıt ol </string>
+    <string name="remember">Beni hatırla</string>
+    <string name="forgot_question">Parolanı mı unuttun?</string>
+    <string name="donot_haveAccount"> Şimdi bir üyelik oluştur?</string>
+    <string name="alert_recovery_mail">Kurtarma postası ve Telefon</string>
+    <string name="alert_edit_mail">Kurtarma postası</string>
+    <string name="btn_send">Gönder</string>
+    <string name="btn_back">Back</string>
+    <string name="verify_code">Verify code</string>
+    <string name="verify">VERIFY</string>
+    <string name="newpassword">New password</string>
+    <string name="newpwd">New password</string>
+    <string name="confirmpwd">Confirm password</string>
+    <string name="change">CHANGE</string>
+    <string name="rent">Mesaj Gönder</string>
+    <string name="alread_rent">Mesaj Gönder</string>
+    <string name="address">Konumunuz</string>
+    <string name="fuel">Yakıt </string>
+    <string name="door"> Kapı Sayısı </string>
+    <string name="seat">Seat number:</string>
+    <string name="gear"> Vites </string>
+    <string name="cartype"> Araç Tipi </string>
+    <string name="detail"> Ürün Açıklaması </string>
+    <string name="business_name">Kullanıcı ismi</string>
+    <string name="standard_name">Standard Name</string>
+    <string name="size">Beden </string>
+    <string name="brand">Brand</string>
+    <string name="color">Renk </string>
+    <string name="pixel_size">Pixel Size: </string>
+    <string name="movie">Movie Length</string>
+    <string name="doornumber"> Kapı Sayısı </string>
+    <string name="bednumber"> Yatak Kapasitesi </string>
+    <string name="experienced_users">Experienced users</string>
+    <string name="apartment">Flats, Apartments</string>
+    <string name="title"> Ürün başlığı </string>
+    <string name="roomnumber"> Oda Sayısı </string>
+    <string name="heating">Isıtma </string>
+    <string name="furbished">Eşyalı</string>
+    <string name="price">Fiyat</string>
+    <string name="all">All</string>
+    <string name="daily">Günlük</string>
+    <string name="weekly">Haftalık </string>
+    <string name="monthly">Aylık </string>
+    <string name="hourly">Hour</string>
+    <string name="deposit">Depozito </string>
+    <string name="weight">Weight</string>
+    <string name="des"> Ürün Açıklaması </string>
+    <string name="upload">Yayınla</string>
+    <string name="rentalcar"> Kiralık Araçlar </string>
+    <string name="caravan"> Kiralık Karavanlar </string>
+    <string name="bedcap"> Yatak Kapasitesi </string>
+    <string name="vehicle"> Kiralık Deniz Araçları </string>
+    <string name="person"> Kişi Kapasitesi </string>
+    <string name="captan"> Kaptan </string>
+    <string name="wait_location">Turkey</string>
+    <string name="dress"> Kiralık Giyim </string>
+    <string name="gender">Cinsiyet </string>
+    <string name="bike"> Kiralık Bisiklet </string>
+    <string name="camera"> Kiralık DSLR &amp;Video </string>
+    <string name="spore">Spor</string>
+    <string name="kamp">Kamp</string>
+    <string name="Music"> Kiralık Müzik Enstrümanları </string>
+    <string name="other">Diğer </string>
+    <string name="total">Toplam fiyat :</string>
+    <string name="from">From:</string>
+    <string name="rentalprice">Rental Price</string>
+    <string name="to">To:</string>
+    <string name="fee">Service Fee</string>
+    <string name="req_msg">Request message</string>
+    <string name="cancel">CANCEL</string>
+    <string name="OK">OK</string>
+    <string name="car">CAR</string>
+    <string name="house">HOUSE</string>
+    <string name="carevan">CARAVAN</string>
+    <string name="dress1">DRESS</string>
+    <string name="select">SELECT</string>
+    <string name="profile">Profilim </string>
+    <string name="open_message">Open Message</string>
+    <string name="new_message">  new message</string>
+
+
+    <string name="inputErrorFirstName">Input first name</string>
+    <string name="inputErrorLastName">Input last name</string>
+    <string name="inputErrorEmail">Input email</string>
+    <string name="inputErrorPassword">Password must be over 6 characters</string>
+    <string name="inputErrorConfirmPwd">Confirm password</string>
+    <string name="ok">Okay</string>
+    <string name="serverFailed">Connecting to the server is failed</string>
+    <string name="saveSuccessed">Success</string>
+    <string name="selece_category"> Üyelik Kategorisi </string>
+    <string name="sel_category_des">(Business users can selecet product categories that they are going to upload)</string>
+    <string name="sel_cate_house">Rental Flats</string>
+    <string name="sel_cate_car">Kiralık Araçlar</string>
+    <string name="sel_cate_caravan">Caravan</string>
+    <string name="sel_cate_vehicle">Sea Vehicle</string>
+    <string name="sel_cate_dress">Dress</string>
+    <string name="uptograde">UP TO GRADE</string>
+    <string name="userrating">User Rating</string>
+    <string name="productcare">Product Care</string>
+    <string name="ontime">On-Time Delivery</string>
+
+    <string name="myproduct_ads">My Products for Advertise</string>
+    <string name="created_date">Created Date:</string>
+    <string name="updated_date">Updated Date</string>
+
+    <string name="logout_question">Are you sure log out?</string>
+    <string name="no_product"> Henüz ürün yok </string>
+    <string name="ads_splash_title">You can advertise your product for business!</string>
+    <string name="ads_splash_content">Bumerang, size Ana Sayfa\'da işinizin ve ürünlerinizin reklamını yaparak daha çok kullanıcıya
+ulaşma imkanı sağlar</string>
+    <string name="ads_splash_period">Reklamlarınız 5 gün boyunca ilk sıralarda yayınlanır</string>
+    <string name="txt_unVerified">No Verified</string>
+    <string name="txt_verified_phon">Verified with Phone number</string>
+    <string name="txt_verified_email">Verified with mail address</string>
+    <string name="txt_verified_id">Verified with ID card</string>
+    <string name="txt_verified_facebook">Verified with Facebook</string>
+    <string name="txt_verified_google">Verified with Google</string>
+    <string name="user_noExist">Business information not Exists</string>
+    <string name="update">Güncelle</string>
+    <string name="income_message"> Gelen Mesajlarım </string>
+    <string name="txt_business_user">Kurumsal Üye</string>
+    <string name="default_desc">This house is very good, And all equipments are very good. You can use all things if you rent this house with reasonable budget</string>
+    <string name="login_with_facebook">Facebook ile giriş yap </string>
+    <string name="login_with_google"> Google ile giriş yap </string>
+    <string name="default_from_dt">7th November</string>
+    <string name="default_to_dt">10th November</string>
+    <string name="rent_price">Rental Price:</string>
+    <string name="plus">Plus</string>
+    <string name="monthly_49">59₺\n/Aylık </string>
+    <string name="weekly_100">59₺\n/week</string>
+    <string name="product_under">This product is under rent from </string>
+    <string name="default_product_title">Toyota 240 G vendor</string>
+    <string name="default_product_desc">The Toyota Prius is a full hybrid electric mid-size hatchback, formental a compact sedan developed and manufactured by Toyota</string>
+    <string name="see_users_all_product"> Kullanıcının Tüm İlanlarını Gör </string>
+    <string name="prime">Prime</string>
+    <string name="product_detail_type">Petrol and Diesel</string>
+    <string name="manual_desc">Manual and Automatic</string>
+    <string name="user_info_no">User Information not exists</string>
+    <string name="txt_iyzico_desc">To verify card info, a 1,00TL payment will be received and then refunded immediately.\n\nThe card will be saved in order to receive recurring payments. After 1 days trial period is expired, the subscription fee will be receive automatically for every 1 Monthly period.</string>
+
+    <string-array name="spinner_roomnumber">
+        <item> Oda Sayısı</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>+5</item>
+    </string-array>
+
+    <string-array name="spinner_heating">
+        <item> Isıtma </item>
+        <item>Klima </item>
+        <item> Güneş Enerjisi </item>
+        <item> Zeminden Isıtma </item>
+        <item> Doğal Gaz </item>
+        <item> Merkezi Isıtma </item>
+    </string-array>
+
+    <string-array name="spinner_furbished">
+        <item>Eşyalı</item>
+        <item>Evet</item>
+        <item>Hayır</item>
+    </string-array>
+
+    <string-array name="spinner_price">
+        <item>Fiyat</item>
+        <item>0 - 100</item>
+        <item>101 - 250</item>
+        <item>251 - 500</item>
+    </string-array>
+
+    <string-array name="spinner_price_flat">
+        <item>Fiyat</item>
+        <item>0 - 500</item>
+        <item>501 - 1000</item>
+        <item>1001 - 2500</item>
+        <item>2501 - 5000</item>
+    </string-array>
+
+    <string-array name="spinner_deposit">
+        <item>Depozito</item>
+        <item>Evet</item>
+        <item>Hayır</item>
+    </string-array>
+
+    <string-array name="spinner_doornumber">
+        <item>Kapı Sayısı</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>+5</item>
+    </string-array>
+
+    <string-array name="spinner_gear">
+        <item>Vites</item>
+        <item>Otomatik</item>
+        <item>Yarı Otomatik</item>
+        <item>Manuel</item>
+    </string-array>
+
+    <string-array name="spinner_cartype">
+        <item> Araç Tipi </item>
+        <item>Sedan</item>
+        <item>SUV</item>
+        <item>Cabrio</item>
+        <item>Station</item>
+        <item>MPV</item>
+        <item>Wagon</item>
+        <item>Minibüs</item>
+    </string-array>
+
+    <string-array name="spinner_fueltype">
+        <item>Yakıt</item>
+        <item>Dizel </item>
+        <item>Benzin </item>
+        <item> LPG </item>
+        <item>Diğer </item>
+    </string-array>
+
+    <string-array name="spinner_bedcap">
+        <item> Yatak Kapasitesi </item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>+5</item>
+    </string-array>
+
+    <string-array name="spinner_person">
+        <item> Kişi Kapasitesi </item>
+        <item>0 - 5</item>
+        <item>5 -15</item>
+        <item>+15</item>
+    </string-array>
+    `
+    <string-array name="spinner_captan">
+        <item>Kaptan</item>
+        <item>Evet</item>
+        <item>Hayır</item>
+    </string-array>
+
+    <string-array name="spinner_gender">
+        <item>Cinsiyet</item>
+        <item>Adam</item>
+        <item>Kadın</item>
+    </string-array>
+
+    <string-array name="spinner_size">
+        <item>Beden</item>
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+        <item>+XL</item>
+    </string-array>
+
+    <string-array name="spinner_color">
+        <item>Renk</item>
+        <item>Kirmizi</item>
+        <item>Pembe</item>
+        <item>Turuncu</item>
+        <item>Mavl</item>
+        <item>Yesil</item>
+        <item>Turkuaz</item>
+        <item>Siyah</item>
+        <item>Beyaz</item>
+        <item>Mor</item>
+        <item>Diger</item>
+    </string-array>
+    <string-array name="arrChooseType">
+        <item>Edit</item>
+        <item>Delete</item>
+    </string-array>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="start_top">M 20.7 7 C 21.1 6.6 21.1 6 20.7 5.6 L 18.4 3.3 C 18 2.9 17.4 2.9 17 3.3 L 15.2 5.1 L 19 8.9</string>
+    <string name="end_top">M 19.6 8 C 20 7.6 20 7 19.6 6.6 L 17.3 4.3 C 16.9 3.9 16.3 3.9 15.9 4.3 L 14.1 6.1 L 17.9 9.9</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- Facebook AppID and scheme -->
+    <string name="facebook_app_id">2116949645117325</string>
+    <string name="fb_login_protocol_scheme">fb2116949645117325</string>
+
+
+    <integer name="product_desc_max_length">500</integer>
+    <string name="title_activity_custom_msg_dialog">CustomMsgDialog</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
+///payment
+    <string name="store_name" translatable="false">My Online Store</string>
+    <string name="googlepay_status_unavailable" translatable="false">Unfortunately, Google Pay is not available on this phone.</string>
+    <string name="googlepay_status_checking" translatable="false">Checking if Google Pay is available...</string>
+    <string name="payments_show_name" translatable="false">Successfully received payment data for %s!</string>
+</resources>
